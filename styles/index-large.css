@@ -37,12 +37,14 @@
         background-color: #202020;
         display: flex;
         justify-content: space-around;
-    }
-    nav a 
-    {
         font-size: x-large;
     }
-    nav a:hover
+    nav a:visited
+    {
+        color: white;
+        background-color: #202020;
+    }
+    nav a:hover, nav a:hover:visited
     {
         color: #202020;
         background-color: white;

@@ -44,7 +44,7 @@
         color: white;
         background-color: #202020;
     }
-    nav a:hover, nav a:hover:visited
+    nav a:hover, nav a:hover:any-link
     {
         color: #202020;
         background-color: white;

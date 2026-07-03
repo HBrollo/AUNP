@@ -45,6 +45,7 @@ nav
     align-items: center;
     justify-content: center;
     background-color: var(--card);
+    color: var(--text);
 }
 /* WHEN MENU IS SHOWN */
 nav.show {
@@ -253,6 +254,7 @@ body.dark-mode {
     --nav-bg: black;
     --nav-text: white;
 }
+/*Contrast*/
 body.high-contrast {
     --bg: black;
     --text: yellow;

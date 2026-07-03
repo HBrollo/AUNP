@@ -170,6 +170,7 @@ body.dark-mode {
     --nav-bg: black;
     --nav-text: white;
 }
+/*Contrast*/
 body.high-contrast {
     --bg: black;
     --text: yellow;

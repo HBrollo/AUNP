@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Helaman Brollo">
+    <meta name="description" content="O Site oficial da Associação dos Universitários de Nova Petrópolis">
+    <link rel="stylesheet" href="styles/cadastro.css">
+    <link rel="stylesheet" href="styles/cadastro-large.css">
+    <title>AUNP</title>
+    <script src="scripts/cadastro.js" defer> </script>
+</head>
+<body>
+    <div class="background">
+        <img src="images/livros.jpg" alt="livros, servindo como plano de fundo">
+    </div>
+    <header>
+        <div class="logo">
+            <img src="images/header.jpg" alt="Logo da AUNP">
+        </div>
+         <div id="menu">
+            <!--Botão de hamburger aparece aqui-->
+        </div>
+        <nav>
+            <a href="index.html">Principal</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a>Horários</a>
+            <a>Arquivos</a>
+            <a>Diretoria</a>
+            <a>Sobre</a>
+        </nav>
+    </header>
+    <main>
+        <div class="buttons">
+            <button id="darkBtn">🌙</button>
+            <button id="contrastBtn">Aa</button>
+        </div>
+        <div class="form">
+                <h1>Novo Usuário:</h1>
+            <form action="" method="get">
+                <div class="leftlabel">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" name="usuario" id="usuario" title="usuario" placeholder="João123" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" title="cpf" placeholder="12345678910" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="rg">RG:</label>
+                    <input type="text" name="rg" id="rg" title="rg" placeholder="1234567890" required>
+                </div>
+                <div class="leftlabel">
+                    <label for="nome">Nome completo:</label>
+                    <input type="text" name="nome" id="nome" title="nome" placeholder="João Santos Silva" required>
+                </div>
+
+                <div class="leftlabel">  
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" title="email" placeholder="joao@gmail.com" required>
+                </div>
+                
+                <div class="short">
+                    <div class="leftlabel">
+                        <label for="estadoCivil">Estado Civil:</label>
+                        <select id="estadoCivil" name="estadoCivil" required>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
+                    </div>
+
+                    <div class="leftlabel">
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" name="nascimento" id="nascimento" title="nascimento" required>
+                    </div>
+                </div>
+
+                
+            
+
+                <div class="leftlabel">
+                    <label for="endereco">Endereço Residencial:</label>
+                    <input type="text" name="endereco" id="endereco" title="endereco" placeholder="Rua 15 de Setembro" required>
+                </div>
+
+                <div class="short">
+                    <div class="leftlabel">
+                        <label for="enderecoNum">Número:</label>
+                        <input type="text" name="enderecoNum" id="enderecoNum" title="enderecoNum" placeholder="123" required>
+                    </div>
+                    <div class="leftlabel">
+                        <label for="enderecoComplemento">Complemento: </label>
+                        <input type="text" name="enderecoComplemento" id="enderecoComplemento" title="enderecoComplemento" placeholder="apt 1">
+                    </div>
+
+                </div>
+                
+
+                
+
+                <div class="leftlabel">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" title="bairro" placeholder="Centro" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" title="cidade" placeholder="Nova Petrópolis" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="cep">Primeiro nome:</label>
+                    <input type="text" name="cep" id="cep" title="cep" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label class="optional" for="trabalho">Local de Trabalho:</label>
+                    <input type="text" name="trabalho" id="trabalho" title="trabalho" >
+                </div>
+
+                <div class="leftlabel">
+                    <label class="optional" for="trabalhoEndereco">Endereço Comercial:</label>
+                    <input type="text" name="trabalhoEndereco" id="trabalhoEndereco" title="trabalhoEndereco" placeholder="Rua 15 de Setembro">
+                </div>
+
+                <div class="leftlabel">
+                    <label class="optional" for="trabalhoNum">Número:</label>
+                    <input type="number" name="trabalhoNum" id="trabalhoNum" title="trabalhoNum" placeholder="123">
+                </div>
+
+                <div class="leftlabel">
+                    <label  class="optional" for="trabalhoComplemento">Complemento:</label>
+                    <input type="text" name="trabalhoComplemento" id="trabalhoComplemento" title="trabalhoComplemento" placeholder="apt 1">
+                </div>
+
+                <div class="leftlabel">
+                    <label class="optional" for="trabalhoBairro">Bairro:</label>
+                    <input type="text" name="trabalhoBairro" id="trabalhoBairro" title="trabalhoBairro" placeholder="Centro">
+                </div>
+
+                <div class="leftlabel">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" title="telefone" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="banco">Banco:</label>
+                <select id="banco" name="banco" required>
+                    <option value="" selected></option>
+                    <option value="001">001. Banco do Brasil S.A.</option>
+                    <option value="748">748. Banco Cooperativo Sicredi S.A.</option>
+                    <option value="040">040. Banco Cargill S.A.</option>
+                    <option value="037">037. Banco do Estado do Pará S.A.</option>
+                    <option value="041">041. Banrisul - Banco do Estado do Rio Grande do Sul S.A.</option>
+                    <option value="260">260. NU Pagamentos S.A. - Nubank</option>
+                    <option value="036">036. Banco Bradesco BBI S.A.</option>
+                    <option value="104">104. Caixa Econômica Federal</option>
+                    <option value="003">003. Banco da Amazônia S.A.</option>
+                    <option value="077">077. Banco Inter S.A.</option>
+                    <option value="237">237. Banco Bradesco S.A.</option>
+                    <option value="033">033. Banco Santander  (Brasil)  S.A.</option>
+                    <option value="756">756. Banco Cooperativo Sicoob S.A.</option>
+                    <option value="380">380. PicPay</option>
+                    <option value="341">341. Itaú Unibanco S.A.</option>
+                    <option value="336">336. Banco C6 S.A - C6 Bank</option>
+                    <option value="004">004. Banco do Nordeste do Brasil S.A.</option>
+                    <option value="018">018. Banco Tricury S.A.</option>
+                    <option value="024">024. Banco BANDEPE S.A.</option>
+                    <option value="063">063. Banco Bradescard S.A.</option>
+                    <option value="122">122. Banco Bradesco BERJ S.A.</option>
+                    <option value="208">208. Banco BTG Pactual S.A.</option>
+                    <option value="286">286. Sulcredi/Ouro - Cooperativa de Crédito Rural</option>
+                    <option value="322">322. Cooperativa de Crédito Rural de Abelardo Luz - Sulcredi/Cred</option>
+                    <option value="473">473. Banco Caixa Geral - Brasil S.A.</option>
+                    <option value="623">623. Banco PAN S.A.</option>
+                    <option value="626">626. Banco C6 Consignado S.A.</option>
+                    <option value="751">751. Scotiabank Brasil S.A. Banco Múltiplo</option>
+                    <option value="007">007. Banco Nacional de Desenvolvimento Econômico e Social - BNDES</option>
+                    <option value="010">010. Credicoamo Crédito Rural Cooperativa</option>
+                    <option value="011">011. Credit Suisse Hedging-Griffo Corretora de Valores S.A.</option>
+                    <option value="012">012. Banco Inbursa S.A.</option>
+                    <option value="014">014. State Street Brasil S.A. - Banco Comercial</option>
+                    <option value="015">015. UBS Brasil Corretora de Câmbio, Títulos e Valores Mobiliário</option>
+                    <option value="016">016. Creditran - Cooperativa de Crédito Mútuo dos Despachantes de Trânsito de SC e RS</option>
+                    <option value="017">017. BNY Mellon Banco S.A.</option>
+                    <option value="021">021. Banestes - Banco do Estado do Espírito Santo S.A.</option>
+                    <option value="025">025. Banco Alfa S.A.</option>
+                    <option value="029">029. Banco Itaú Consignado S.A.</option>
+                    <option value="047">047. Banco do Estado de Sergipe S.A.</option>
+                    <option value="060">060. Confidence Corretora de Câmbio S.A.</option>
+                    <option value="062">062. Hipercard Banco Múltiplo S.A.</option>
+                    <option value="064">064. Goldman Sachs do Brasil Banco Múltiplo S.A.</option>
+                    <option value="065">065. Banco Andbank (Brasil) S.A.</option>
+                    <option value="066">066. Banco Morgan Stanley S.A.</option>
+                    <option value="069">069. Banco Crefisa S.A.</option>
+                    <option value="070">070. BRB - Banco de Brasília S.A.</option>
+                    <option value="074">074. Banco J. Safra S.A.</option>
+                    <option value="075">075. Banco ABN AMRO S.A.</option>
+                    <option value="076">076. Banco KDB S.A.</option>
+                    <option value="078">078. Haitong Banco de Investimento do Brasil S.A.</option>
+                    <option value="079">079. Banco Original do Agronegócio S.A.</option>
+                    <option value="080">080. B&T Corretora de Câmbio Ltda.</option>
+                    <option value="081">081. BancoSeguro S.A.</option>
+                    <option value="082">082. Banco Topázio S.A.</option>
+                    <option value="083">083. Banco da China Brasil S.A.</option>
+                    <option value="084">084. Uniprime Norte do Paraná - Coop de Economia e Crédito Mútuo </option>
+                    <option value="085">085. Cooperativa Central de Crédito - AILOS</option>
+                    <option value="089">089. Credisan Cooperativa de Crédito</option>
+                    <option value="091">091. Unicred - Central de Cooperativas de Economia e Crédito Mútuo do Estado do Rio Grande do Sul</option>
+                    <option value="092">092. Brickell S.A. Crédito</option>
+                    <option value="093">093. PóloCred - Sociedade de Crédito ao Microempreendedor e Empresa de Pequeno Porte Ltda.</option>
+                    <option value="094">094. Banco Finaxis S.A.</option>
+                    <option value="095">095. Travelex Banco de Câmbio S.A.</option>
+                    <option value="096">096. Banco B3 S.A.</option>
+                    <option value="097">097. Cooperativa Central de Crédito Noroeste Brasileiro Ltda.</option>
+                    <option value="098">098. Credialiança Cooperativa de Crédito Rural</option>
+                    <option value="099">099. Uniprime Central - Central Interestadual de Cooperativas de Credito Ltda.</option>
+                    <option value="100">100. Planner Corretora de Valores S.A.</option>
+                    <option value="101">101. Renascença Distribuidora de Títulos e Valores Mobiliários Ltda.</option>
+                    <option value="102">102. XP Investimentos Corretora de Cambio Titulos e Valores Mobiliarios S.A.</option>
+                    <option value="105">105. Lecca Crédito, Financiamento e Investimento S.A.</option>
+                    <option value="107">107. Banco BOCOM BBM S.A.</option>
+                    <option value="108">108. Portocred S.A. - Crédito, Financiamento e Investimento</option>
+                    <option value="111">111. Oliveira Trust Distribuidora de Títulos e Valores Mobiliários S.A.</option>
+                    <option value="113">113. Magliano S.A. Corretora de Cambio e Valores Mobiliarios</option>
+                    <option value="114">114. Central Cooperativa de Crédito no Estado do Espírito Santo -</option>
+                    <option value="117">117. Advanced Corretora de Câmbio</option>
+                    <option value="119">119. Banco Western Union do Brasil S.A.</option>
+                    <option value="120">120. Banco Rodobens S.A.</option>
+                    <option value="121">121. Banco Agibank S.A.</option>
+                    <option value="124">124. Banco Woori Bank do Brasil S.A.</option>
+                    <option value="125">125. Banco Genial S.A.</option>
+                    <option value="126">126. BR Partners Banco de Investimento S.A.</option>
+                    <option value="127">127. Codepe Corretora de Valores e Câmbio S.A.</option>
+                    <option value="128">128. Braza Bank S.A. Banco de Câmbio</option>
+                    <option value="129">129. UBS Brasil Banco de Investimento S.A.</option>
+                    <option value="130">130. Caruana S.A. - Sociedade de Credito, Financiamento e Investimento</option>
+                    <option value="131">131. Tullett Prebon Brasil Corretora de Valores e Cambio Ltda.</option>
+                    <option value="132">132. ICBC do Brasil Banco Múltiplo S.A.</option>
+                    <option value="133">133. Cresol - Confederação Nacional das Cooperativas Centrais de. Crédito e Economia Familiar e Solidária</option>
+                    <option value="134">134. BGC Liquidez Distribuidora de Titulos e Valores Mobiliarios</option>
+                    <option value="136">136. Unicred do Brasil - Confederação Nacional das Cooperativas Centrais</option>
+                    <option value="138">138. Get Money Corretora de Câmbio S.A.</option>
+                    <option value="139">139. Intesa Sanpaolo Brasil S.A. - Banco Múltiplo</option>
+                    <option value="140">140. Easynvest - Título Corretora de Valores S.A.</option>
+                    <option value="142">142. Broker Brasil Corretora de Câmbio Ltda.</option>
+                    <option value="143">143. Treviso Corretora de Câmbio S.A.</option>
+                    <option value="144">144. BEXS Banco de Câmbio S.A.</option>
+                    <option value="145">145. Levycam Corretora de Câmbio</option>
+                    <option value="146">146. Guitta Corretora de Cambio Ltda.</option>
+                    <option value="149">149. Facta Financeira S.A. - Crédito Financiamento e Investimento</option>
+                    <option value="157">157. ICAP do Brasil Corretora de Títulos e Valores Mobiliários Lt</option>
+                    <option value="159">159. Casa do Crédito S.A. Sociedade de Crédito ao Microempreended</option>
+                    <option value="163">163. Commerzbank Brasil S.A. - Banco Múltiplo</option>
+                    <option value="169">169. Banco Olé Bonsucesso Consignado S.A.</option>
+                    <option value="173">173. BRL Trust Distribuidora de Títulos e Valores Mobiliários S.A</option>
+                    <option value="174">174. Pefisa - Pernambucanas Financiadora S.A Crédito, Financiamento e Investimentos</option>
+                    <option value="177">177. Guide Investimentos S.A. Corretora de Valores</option>
+                    <option value="180">180. CM Capital Markets Corretora de Câmbio, Título e Valores Mobiliários Ltda</option>
+                    <option value="183">183. SOCRED S.A. - Sociedade de Crédito ao Microempreendedor e à Empresa de Pequeno Porte</option>
+                    <option value="184">184. Banco Itaú BBA S.A.</option>
+                    <option value="188">188. Ativa Investimentos S.A. Corretora de Títulos, Câmbio e Valores</option>
+                    <option value="189">189. HS Financeira S.A. - Credito, Financiamento e Investimentos</option>
+                    <option value="190">190. Servicoop - Cooperativa de Economia e Crédito Mútuo dos Servidores Públicos Estaduais do RS</option>
+                    <option value="191">191. Nova Futura Corretora de Títulos e Valores Mobiliários Ltda.</option>
+                    <option value="194">194. Parmetal Distribuidora de Títulos e Valores Mobiliários Ltda.</option>
+                    <option value="196">196. Fair Corretora de Câmbio S.A.</option>
+                    <option value="197">197. Stone Pagamentos S.A.</option>
+                    <option value="212">212. Banco Original S.A.</option>
+                    <option value="213">213. Banco Arbi S.A.</option>
+                    <option value="217">217. Banco John Deere S.A.</option>
+                    <option value="218">218. Banco BS2 S.A.</option>
+                    <option value="222">222. Banco Credit Agricole Brasil S.A.</option>
+                    <option value="224">224. Banco Fibra S.A.</option>
+                    <option value="233">233. Banco Cifra S.A.</option>
+                    <option value="241">241. Banco Clássico S.A.</option>
+                    <option value="243">243. Banco Master S.A.</option>
+                    <option value="246">246. Banco ABC Brasil S.A.</option>
+                    <option value="249">249. Banco Investcred Unibanco S.A.</option>
+                    <option value="250">250. BCV - Banco de Crédito e Varejo S.A.</option>
+                    <option value="253">253. Bexs Corretora de Câmbio S.A.</option>
+                    <option value="254">254. Paraná Banco S.A.</option>
+                    <option value="259">259. Moneycorp Banco de Cambio S.A.</option>
+                    <option value="265">265. Banco Fator S.A.</option>
+                    <option value="266">266. Banco Cédula S.A.</option>
+                    <option value="268">268. Bari Companhia Hipotecária</option>
+                    <option value="269">269. HSBC Brasil S.A. - Banco de Investimento</option>
+                    <option value="270">270. Sagitur Corretora de Câmbio Ltda.</option>
+                    <option value="271">271. IB Corretora de Câmbio, Títulos e Valores Mobiliários S.A.</option>
+                    <option value="272">272. AGK Corretora de Câmbio S.A.</option>
+                    <option value="273">273. Cooperativa de Crédito Rural de São Miguel do Oeste - Sulcre</option>
+                    <option value="274">274. BMP - Sociedade de Crédito ao Microempreendedor e à Empresa de Pequeno Porte Ltda.</option>
+                    <option value="276">276. Banco Senff S.A.</option>
+                    <option value="278">278. Genial Investimentos Corretora de Valores Mobiliários S.A.</option>
+                    <option value="279">279. Primacred - Cooperativa de Crédito Rural</option>
+                    <option value="280">280. Avista S.A. Crédito, Financiamento e Investimento</option>
+                    <option value="281">281. Cooperativa de Crédito Rural Coopavel</option>
+                    <option value="283">283. RB Capital Investimentos Distribuidora de Títulos e Valores Mobiliários Ltda.</option>
+                    <option value="285">285. Frente Corretora de Câmbio Ltda.</option>
+                    <option value="288">288. Carol Distribuidora de Títulos e Valores Mobiliarios Ltda.</option>
+                    <option value="289">289. Decyseo Corretora de Câmbio</option>
+                    <option value="290">290. Pagseguro Internet S.A. - PagBank</option>
+                    <option value="292">292. BS2 Distribuidora de Títulos e Valores Mobiliários S.A.</option>
+                    <option value="293">293. Lastro RDV Distribuidora de Títulos e Valores Mobiliários Lt</option>
+                    <option value="296">296. Vision S.A. Corretora de Câmbio</option>
+                    <option value="298">298. Vip's Corretora de Câmbio Ltda.</option>
+                    <option value="299">299. Banco Afinz S.A. Banco Múltiplo</option>
+                    <option value="300">300. Banco de La Nacion Argentina</option>
+                    <option value="301">301. BPP Instituição de Pagamento S.A.</option>
+                    <option value="306">306. Portopar Distribuidora de Títulos e Valores Mobiliários Ltda.</option>
+                    <option value="307">307. Terra Investimentos Distribuidora de Títulos e Valores Mobil</option>
+                    <option value="309">309. Cambionet Corretora de Câmbio Ltda.</option>
+                    <option value="310">310. Vortx Distribuidora de Títulos e Valores Mobiliários Ltda.</option>
+                    <option value="315">315. PI Distribuidora de Títulos e Valores Mobiliários S.A.</option>
+                    <option value="318">318. Banco BMG S.A.</option>
+                    <option value="319">319. Ourominas/OM - Distribuidora de Títulos e Valores Mobiliários</option>
+                    <option value="320">320. China Construction Bank (Brasil) Banco Múltiplo S.A.</option>
+                    <option value="321">321. Crefaz Sociedade Crédito ao Microempreendedor e à Empresa de Pequeno Porte Ltda.</option>
+                    <option value="323">323. Mercadopago.com Representações Ltda.</option>
+                    <option value="325">325. Órama Distribuidora de Títulos e Valores Mobiliários S.A.</option>
+                    <option value="326">326. Parati Crédito Financiamento e Investimento S.A.</option>
+                    <option value="329">329. QI Sociedade de Crédito Direto S.A.</option>
+                    <option value="330">330. Banco Bari de Investimentos e Financiamentos S.A.</option>
+                    <option value="331">331. Fram Capital Distribuidora de Títulos e Valores Mobiliários </option>
+                    <option value="332">332. Acesso Soluções de Pagamento S.A.</option>
+                    <option value="335">335. Banco Digio S.A.</option>
+                    <option value="340">340. Super Pagamentos e Administração de Meios Eletrônicos S.A.</option>
+                    <option value="342">342. Creditas Sociedade de Crédito Direto S.A.</option>
+                    <option value="343">343. FFA Sociedades de Crédito ao Microempreendedor e à Empresa de Pequeno Porte</option>
+                    <option value="348">348. Banco XP S.A.</option>
+                    <option value="349">349. AMAGGI S.A. - Crédito, Financiamento e Investimento</option>
+                    <option value="352">352. Toro Corretora de Títulos e Valores Mobiliários S/A</option>
+                    <option value="354">354. Necton Investimentos S.A. Corretora de Valores Mobiliários e Commodities</option>
+                    <option value="355">355. Ótimo Sociedade de Crédito Direto S.A.</option>
+                    <option value="364">364. Gerencianet Pagamentos do Brasil Ltda.</option>
+                    <option value="365">365. Solidus S.A. Corretora de Câmbio e Valores Mobiliários</option>
+                    <option value="366">366. Banco Société Générale Brasil S.A.</option>
+                    <option value="367">367. Vitreo Distribuidora de Títulos e Valores Mobiliários S.A.</option>
+                    <option value="368">368. Banco Carrefour</option>
+                    <option value="370">370. Banco Mizuho do Brasil S.A.</option>
+                    <option value="373">373. Up.p Sociedade de Empréstimo entre Pessoas S.A.</option>
+                    <option value="376">376. Banco J. P. Morgan S.A.</option>
+                    <option value="389">389. Banco Mercantil do Brasil S.A.</option>
+                    <option value="394">394. Banco Bradesco Financiamentos S.A.</option>
+                    <option value="399">399. Kirton Bank S.A. - Banco Múltiplo</option>
+                    <option value="412">412. Banco Capital S.A.</option>
+                    <option value="422">422. Banco Safra S.A.</option>
+                    <option value="456">456. Banco MUFG Brasil S.A.</option>
+                    <option value="464">464. Banco Sumitomo Mitsui Brasileiro S.A.</option>
+                    <option value="477">477. Citibank N.A.</option>
+                    <option value="479">479. Banco ItauBank S.A</option>
+                    <option value="487">487. Deutsche Bank S.A. - Banco Alemão</option>
+                    <option value="488">488. JPMorgan Chase Bank, National Association</option>
+                    <option value="492">492. ING Bank N.V.</option>
+                    <option value="495">495. Banco de La Provincia de Buenos Aires</option>
+                    <option value="505">505. Banco Credit Suisse (Brasil) S.A.</option>
+                    <option value="545">545. Senso Corretora de Câmbio, Títulos e Valores Mobiliários</option>
+                    <option value="600">600. Banco Luso Brasileiro S.A.</option>
+                    <option value="604">604. Banco Industrial do Brasil S.A.</option>
+                    <option value="610">610. Banco VR S.A.</option>
+                    <option value="611">611. Banco Paulista S.A.</option>
+                    <option value="612">612. Banco Guanabara S.A.</option>
+                    <option value="613">613. Omni Banco S.A.</option>
+                    <option value="630">630. Banco Letsbank S.A.</option>
+                    <option value="633">633. Banco Rendimento S.A.</option>
+                    <option value="634">634. Banco Triângulo S.A.</option>
+                    <option value="637">637. Banco Sofisa S.A.</option>
+                    <option value="643">643. Banco Pine S.A.</option>
+                    <option value="652">652. Itaú Unibanco Holding S.A.</option>
+                    <option value="653">653. Banco Voiter S.A.</option>
+                    <option value="654">654. Banco Digimais S.A.</option>
+                    <option value="655">655. Banco Votorantim S.A.</option>
+                    <option value="707">707. Banco Daycoval S.A.</option>
+                    <option value="712">712. Banco Ourinvest S.A.</option>
+                    <option value="739">739. Banco Cetelem S.A.</option>
+                    <option value="741">741. Banco Ribeirão Preto S.A.</option>
+                    <option value="743">743. Banco Semear S.A.</option>
+                    <option value="745">745. Banco Citibank S.A.</option>
+                    <option value="746">746. Banco Modal S.A.</option>
+                    <option value="747">747. Banco Rabobank International Brasil S.A.</option>
+                    <option value="752">752. Banco BNP Paribas Brasil S.A.</option>
+                    <option value="753">753. Novo Banco Continental S.A. - Banco Múltiplo</option>
+                    <option value="754">754. Banco Sistema S.A.</option>
+                    <option value="755">755. Bank of America Merrill Lynch Banco Múltiplo S.A.</option>
+                    <option value="757">757. Banco KEB HANA do Brasil S.A.</option>
+                    </select>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="conta">Tipo de Conta:</label>
+                    <select id="conta" nome="conta">
+                        <option value="1">Conta Corrente</option>
+                        <option value="2">Conta Poupança</option>
+                    </select>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="pix">Tipo PIX</label>
+                    <select id="pix" nome="pix">
+                        <option value="1">CPF/CNPJ</option>
+                        <option value="2">Celular</option>
+                        <option value="3">Email</option>
+                        <option value="4">Outro</option>
+                    </select>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="chave">Chave Pix:</label>
+                    <input type="text" id="chave" name="chave" title="chave" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="facul1">Faculdade 1:</label>
+                    <select id="facul1" name="facul1"  required>
+                        <option value="" selected></option>
+                        <option value="UCS - Caxias do Sul">UCS - Caxias do Sul</option>
+                        <option value="FSG">FSG-Faculdade da Serra Gaúcha</option>
+                        <option value="Unisinos">Unisinos</option>
+                        <option value="Feevale">Feevale</option>
+                        <option value="Liberato">Liberato</option>
+                        <option value="IFRS">Instituto Federal da Feliz</option>
+                        <option value="SENAI">SENAI-Serviço Nacional de Aprendizagem Industrial</option>
+                        <option value="SEG">SEG-São Francisco Cursos Técnicos</option>
+                        <option value="UNOPAR">UNOPAR</option>
+                        <option value="Ideau">IDEAU - Caxias do Sul</option>
+                        <option value="IFRS Caxias">Instituto Federal de Caxias do Sul</option>
+                        <option value="GRAU">GRAU Técnico Caxias do Sul</option>
+                        <option value="FIERGS">FIERGS - SENAI</option>
+                        <option value="Pré-vestibular">Pré-vestibular</option>
+                        <option value="Unicesumar ">Universidade Cesumar </option>
+                        <option value="UCS - Canela">UCS - Canela</option>
+                        <option value="Colégio Frederico Michaelsen">Colégio Frederico Michaelsen</option>
+                        <option value="ISEI">Instituto Superior de Educação Ivoti</option>
+                        <option value="E. E. P. em Saúde do Hospital Pompéia">E. E. P. em Saúde do Hospital Pompéia</option>
+                        <option value="FTEC">FTEC</option>
+                        <option value="Uniasselvi">Uniasselvi</option>
+                        <option value="FTSG da Serra Gaúcha">FTSG da Serra Gaúcha</option>
+                        <option value="SENAC">SENAC</option>
+                        <option value="UNOPAR - Caxias do Sul">UNOPAR - Caxias do Sul</option>
+                        <option value="CETEC">CETEC</option>
+                        <option value="UERGS">UERGS</option>
+                        <option value="Dohms">Dohms</option>
+                        <option value="Nossa Sra. de Fátima">Nossa Sra. de Fátima</option>
+                        <option value="EETCS">Escola Estadual Técnica Caxias do Sul</option>
+                        <option value="ACM">Associação Cristã de Moços</option>
+                        <option value="UFCSPA">Univesidade Ferderal de Ciências da Saúde de Porto</option>
+                        <option value="UFRGS">Universidade Federal do Rio Grande do Sul</option>
+                        <option value="Anhanguera">Anhanguera</option>
+                        <option value="Ulbra - Canela">Ulbra - Canela</option>
+                        <option value="CHRONOS">Chronos</option>
+                        <option value="UNINTER">Uninter</option>
+                        <option value="Estácio">Faculdade Estácio</option>
+                        <option value="Ulbra">Ulbra</option>
+                        <option value="Outra">Outra universidade</option>
+                        <option value="Linha">Utilizo ônibus de linha</option>
+                        <option value="Nenhum">Não universitário, mas utilizo transporte</option>
+                    </select>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="curso1">Curso 1:</label>
+                    <select id="curso1" name="curso1" required>
+                        <option value="" selected></option>
+                        <option value="Adm. Gestão para Inovação e Liderança">Adm. Gestão para Inovação e Liderança</option>
+                        <option value="Administração de Empresas">Administração de Empresas</option>
+                        <option value="Administração de Empresas - Ênfase em Comércio Exterior">Administração de Empresas - Ênfase em Comércio Exterior</option>
+                        <option value="Agronegócios">Agronegócios</option>
+                        <option value="Agronomia">Agronomia</option>
+                        <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="Arquitetura e Urbanismo">Arquitetura e Urbanismo</option>
+                        <option value="Arte e Terapia">Arte e Terapia</option>
+                        <option value="Artes Plásticas">Artes Plásticas</option>
+                        <option value="Artes Visuais">Artes Visuais</option>
+                        <option value="Assistente Social">Assistente Social</option>
+                        <option value="Automação Industrial">Automação Industrial</option>
+                        <option value="Auxiliar de Saúde Bucal">Auxiliar de Saúde Bucal</option>
+                        <option value="Biologia">Biologia</option>
+                        <option value="Biomedicina">Biomedicina</option>
+                        <option value="Ciência da Computação">Ciência da Computação</option>
+                        <option value="Ciência e Tecnologia de Alimentos">Ciência e Tecnologia de Alimentos</option>
+                        <option value="Ciência Política">Ciência Política</option>
+                        <option value="Ciências Biológicas">Ciências Biológicas</option>
+                        <option value="Ciências Contábeis">Ciências Contábeis</option>
+                        <option value="Ciências Econômicas">Ciências Econômicas</option>
+                        <option value="Ciências Farmacêuticas">Ciências Farmacêuticas</option>
+                        <option value="Ciências Jurídicas">Ciências Jurídicas</option>
+                        <option value="Ciências Sociais">Ciências Sociais</option>
+                        <option value="Comércio Internacional">Comércio Internacional</option>
+                        <option value="Comissária de Voo">Comissária de Voo</option>
+                        <option value="Comunicação Digital">Comunicação Digital</option>
+                        <option value="Comunicação Social">Comunicação Social</option>
+                        <option value="Comunicação Social - Jornalismo">Comunicação Social - Jornalismo</option>
+                        <option value="Comunicação Social - Publicidade e Propaganda">Comunicação Social - Publicidade e Propaganda</option>
+                        <option value="Comunicação Social - Relações Públicas">Comunicação Social - Relações Públicas</option>
+                        <option value="Custos e Contabilidade">Custos e Contabilidade</option>
+                        <option value="Desenhista">Desenhista</option>
+                        <option value="Design">Design</option>
+                        <option value="Design de Interiores">Design de Interiores</option>
+                        <option value="Design de Moda">Design de Moda</option>
+                        <option value="Design de Moda e Tecnologia">Design de Moda e Tecnologia</option>
+                        <option value="Design de Móveis">Design de Móveis</option>
+                        <option value="Direito">Direito</option>
+                        <option value="Doutourado">Doutourado</option>
+                        <option value="Economia">Economia</option>
+                        <option value="Educação Física">Educação Física</option>
+                        <option value="Eletrica Automotiva">Eletrica Automotiva</option>
+                        <option value="Enfermagem">Enfermagem</option>
+                        <option value="Engenharia Ambiental">Engenharia Ambiental</option>
+                        <option value="Engenharia Ambiental com Habilitação em Mecânica">Engenharia Ambiental com Habilitação em Mecânica</option>
+                        <option value="Engenharia Biomédica">Engenharia Biomédica</option>
+                        <option value="Engenharia Cartográfica e de Agrimensura">Engenharia Cartográfica e de Agrimensura</option>
+                        <option value="Engenharia Civil">Engenharia Civil</option>
+                        <option value="Engenharia da Computação">Engenharia da Computação</option>
+                        <option value="Engenharia de Alimentos">Engenharia de Alimentos</option>
+                        <option value="Engenharia de Controle e Automoção">Engenharia de Controle e Automoção</option>
+                        <option value="Engenharia de Energia">Engenharia de Energia</option>
+                        <option value="Engenharia de Materiais">Engenharia de Materiais</option>
+                        <option value="Engenharia de Produção">Engenharia de Produção</option>
+                        <option value="Engenharia de Produção Mecânica">Engenharia de Produção Mecânica</option>
+                        <option value="Engenharia de Software ">Engenharia de Software </option>
+                        <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                        <option value="Engenharia Eletrônica">Engenharia Eletrônica</option>
+                        <option value="Engenharia Industrial Mecânica">Engenharia Industrial Mecânica</option>
+                        <option value="Engenharia Industrial Química">Engenharia Industrial Química</option>
+                        <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                        <option value="Engenharia Metalúrgica">Engenharia Metalúrgica</option>
+                        <option value="Engenharia Química">Engenharia Química</option>
+                        <option value="Ensino Fundamental - Escola Helen Keller">Ensino Fundamental - Escola Helen Keller</option>
+                        <option value="Ensino Médio">Ensino Médio</option>
+                        <option value="Ensino médio integrado com técnico">Ensino médio integrado com técnico</option>
+                        <option value="Farmácia">Farmácia</option>
+                        <option value="Filosofia">Filosofia</option>
+                        <option value="Física Médica">Física Médica</option>
+                        <option value="Fisioterapia">Fisioterapia</option>
+                        <option value="Fonoaodiologia">Fonoaodiologia</option>
+                        <option value="Formação de Produtores Musicais">Formação de Produtores Musicais</option>
+                        <option value="Formação em Diretor de Ensino CFC">Formação em Diretor de Ensino CFC</option>
+                        <option value="Fotografia">Fotografia</option>
+                        <option value="Gastronomia">Gastronomia</option>
+                        <option value="Geologia">Geologia</option>
+                        <option value="Gestão Ambiental">Gestão Ambiental</option>
+                        <option value="Gestão Comercial">Gestão Comercial</option>
+                        <option value="Gestão de Empresas">Gestão de Empresas</option>
+                        <option value="Gestão de Marketing">Gestão de Marketing</option>
+                        <option value="Gestão de Marketing Empresarial">Gestão de Marketing Empresarial</option>
+                        <option value="Gestão de Micro e Pequenas Empresas">Gestão de Micro e Pequenas Empresas</option>
+                        <option value="Gestão de Pessoas">Gestão de Pessoas</option>
+                        <option value="Gestão de Produção">Gestão de Produção</option>
+                        <option value="Gestão de Segurança Privada">Gestão de Segurança Privada</option>
+                        <option value="Gestão de Vendas e Representações Comercias">Gestão de Vendas e Representações Comercias</option>
+                        <option value="Gestão e Inovação em Liderança">Gestão e Inovação em Liderança</option>
+                        <option value="Gestão em RH">Gestão em RH</option>
+                        <option value="Gestão Financeira">Gestão Financeira</option>
+                        <option value="Gestão Pública">Gestão Pública</option>
+                        <option value="Graduação">Graduação</option>
+                        <option value="História">História</option>
+                        <option value="Hotelaria">Hotelaria</option>
+                        <option value="Inglês">Inglês</option>
+                        <option value="Jogador de vôlei">Jogador de vôlei</option>
+                        <option value="Jornalismo">Jornalismo</option>
+                        <option value="Letras">Letras</option>
+                        <option value="Letras - Português/Alemão">Letras - Português/Alemão</option>
+                        <option value="Letras - Português/Espanhol">Letras - Português/Espanhol</option>
+                        <option value="Letras - Português/Inglês">Letras - Português/Inglês</option>
+                        <option value="Libras">Libras</option>
+                        <option value="Logistica">Logistica</option>
+                        <option value="Magistério">Magistério</option>
+                        <option value="Marketing e suas Tecnologias">Marketing e suas Tecnologias</option>
+                        <option value="Marketing Empresarial">Marketing Empresarial</option>
+                        <option value="Matemática">Matemática</option>
+                        <option value="Medicina">Medicina</option>
+                        <option value="Medicina Veterinária">Medicina Veterinária</option>
+                        <option value="Mestrado">Mestrado</option>
+                        <option value="Moda">Moda</option>
+                        <option value="Moda e Estilo">Moda e Estilo</option>
+                        <option value="Música">Música</option>
+                        <option value="Negócios Imobiliários">Negócios Imobiliários</option>
+                        <option value="Nutrição">Nutrição</option>
+                        <option value="Odontologia">Odontologia</option>
+                        <option value="Organizador de Eventos">Organizador de Eventos</option>
+                        <option value="Outros">Outros</option>
+                        <option value="Pedagogia">Pedagogia</option>
+                        <option value="Polímeros">Polímeros</option>
+                        <option value="Pós-Graduação">Pós-Graduação</option>
+                        <option value="Pré-Vestibular">Pré-Vestibular</option>
+                        <option value="Processos Gerenciais">Processos Gerenciais</option>
+                        <option value="Processos Químicos">Processos Químicos</option>
+                        <option value="Professor(a)">Professor(a)</option>
+                        <option value="Psicologia">Psicologia</option>
+                        <option value="Psicopedagogia">Psicopedagogia</option>
+                        <option value="Publicidade e Propaganda">Publicidade e Propaganda</option>
+                        <option value="Química">Química</option>
+                        <option value="Quiropraxia">Quiropraxia</option>
+                        <option value="Radiologia">Radiologia</option>
+                        <option value="Relações Internacionais">Relações Internacionais</option>
+                        <option value="Relações Públicas">Relações Públicas</option>
+                        <option value="Secretariado Executivo Bilíngue">Secretariado Executivo Bilíngue</option>
+                        <option value="Segurança do Trabalho">Segurança do Trabalho</option>
+                        <option value="Serviço Social">Serviço Social</option>
+                        <option value="Sistemas de Informação">Sistemas de Informação</option>
+                        <option value="Sistemas de Qualidade">Sistemas de Qualidade</option>
+                        <option value="Sistemas para Internet">Sistemas para Internet</option>
+                        <option value="Técnico Calçado Industrial">Técnico Calçado Industrial</option>
+                        <option value="Técnico em Administração">Técnico em Administração</option>
+                        <option value="Técnico em Cozinha">Técnico em Cozinha</option>
+                        <option value="Técnico em Edificações">Técnico em Edificações</option>
+                        <option value="Técnico em Eletrônica">Técnico em Eletrônica</option>
+                        <option value="Técnico em Enfermagem">Técnico em Enfermagem</option>
+                        <option value="Técnico em Gastronomia">Técnico em Gastronomia</option>
+                        <option value="Técnico em Gestão">Técnico em Gestão</option>
+                        <option value="Técnico em Guia de Turismo">Técnico em Guia de Turismo</option>
+                        <option value="Técnico em Informática">Técnico em Informática</option>
+                        <option value="Técnico em Instrumentação Industrial">Técnico em Instrumentação Industrial</option>
+                        <option value="Técnico em Logística">Técnico em Logística</option>
+                        <option value="Técnico em Magistério">Técnico em Magistério</option>
+                        <option value="Técnico em Manutenção Automotiva">Técnico em Manutenção Automotiva</option>
+                        <option value="Técnico em Matalurgia">Técnico em Matalurgia</option>
+                        <option value="Técnico em Mecânica">Técnico em Mecânica</option>
+                        <option value="Técnico em Mecatrônica">Técnico em Mecatrônica</option>
+                        <option value="Técnico em Meio Ambiente">Técnico em Meio Ambiente</option>
+                        <option value="Técnico em Modelagem Feminina">Técnico em Modelagem Feminina</option>
+                        <option value="Técnico em Organização de Eventos">Técnico em Organização de Eventos</option>
+                        <option value="Técnico em Piloto Automático">Técnico em Piloto Automático</option>
+                        <option value="Técnico em Prótese Odontológica">Técnico em Prótese Odontológica</option>
+                        <option value="Técnico em Química">Técnico em Química</option>
+                        <option value="Técnico em Radiologia">Técnico em Radiologia</option>
+                        <option value="Técnico em Saúde Bucal">Técnico em Saúde Bucal</option>
+                        <option value="Técnico em Transações Imobiliárias">Técnico em Transações Imobiliárias</option>
+                        <option value="Técnico em Turismo">Técnico em Turismo</option>
+                        <option value="Técnico Gerência Empresarial">Técnico Gerência Empresarial</option>
+                        <option value="Técnico Magistério">Técnico Magistério</option>
+                        <option value="Técnico Segurança do Trabalho">Técnico Segurança do Trabalho</option>
+                        <option value="Tecnologia em Análise e Desenvolvimento de Sistemas">Tecnologia em Análise e Desenvolvimento de Sistemas</option>
+                        <option value="Tecnologia em Comércio Exterior">Tecnologia em Comércio Exterior</option>
+                        <option value="Tecnologia em Design de Interiores">Tecnologia em Design de Interiores</option>
+                        <option value="Tecnologia em Design Gráfico">Tecnologia em Design Gráfico</option>
+                        <option value="Tecnologia em Estética ">Tecnologia em Estética </option>
+                        <option value="Tecnologia em Estética e Cosmética">Tecnologia em Estética e Cosmética</option>
+                        <option value="Tecnologia em Eventos">Tecnologia em Eventos</option>
+                        <option value="Tecnologia em Gestão Ambiental">Tecnologia em Gestão Ambiental</option>
+                        <option value="Tecnologia em Gestão da Produção Industrial">Tecnologia em Gestão da Produção Industrial</option>
+                        <option value="Tecnologia em Gestão de Recursos Humanos">Tecnologia em Gestão de Recursos Humanos</option>
+                        <option value="Tecnologia em Jogos Digitais">Tecnologia em Jogos Digitais</option>
+                        <option value="Tecnologia em Logística">Tecnologia em Logística</option>
+                        <option value="Tecnologia em Produção Fonográfica">Tecnologia em Produção Fonográfica</option>
+                        <option value="Tecnologia em Produção Multimídia">Tecnologia em Produção Multimídia</option>
+                        <option value="Tecnologia em Redes de Computadores">Tecnologia em Redes de Computadores</option>
+                        <option value="Tecnologia em Segurança da Informação">Tecnologia em Segurança da Informação</option>
+                        <option value="Tecnologia em Segurança do Trabalho">Tecnologia em Segurança do Trabalho</option>
+                        <option value="Tecnologia em Segurança Privada">Tecnologia em Segurança Privada</option>
+                        <option value="Tecnologia em Sistemas para Internet">Tecnologia em Sistemas para Internet</option>
+                        <option value="Tecnologias Digitais">Tecnologias Digitais</option>
+                        <option value="Turismo">Turismo</option>
+                    </select>
+                </div>
+                
+                <div class="leftlabel">
+                    <label class="optional" for="id1">Nº cadastro aluno/Id aluno/Nº matrícula 1:	</label>
+                    <input type="input" name="id1" id="id1" title="id1">
+                </div>
+
+                <div class="leftlabel">
+                    <label for="facul2">Faculdade 2:</label>
+                    <select id="facul2" name="facul2">
+                        <option value="" selected></option>
+                        <option value="UCS - Caxias do Sul">UCS - Caxias do Sul</option>
+                        <option value="FSG">FSG-Faculdade da Serra Gaúcha</option>
+                        <option value="Unisinos">Unisinos</option>
+                        <option value="Feevale">Feevale</option>
+                        <option value="Liberato">Liberato</option>
+                        <option value="IFRS">Instituto Federal da Feliz</option>
+                        <option value="SENAI">SENAI-Serviço Nacional de Aprendizagem Industrial</option>
+                        <option value="SEG">SEG-São Francisco Cursos Técnicos</option>
+                        <option value="UNOPAR">UNOPAR</option>
+                        <option value="Ideau">IDEAU - Caxias do Sul</option>
+                        <option value="IFRS Caxias">Instituto Federal de Caxias do Sul</option>
+                        <option value="GRAU">GRAU Técnico Caxias do Sul</option>
+                        <option value="FIERGS">FIERGS - SENAI</option>
+                        <option value="Pré-vestibular">Pré-vestibular</option>
+                        <option value="Unicesumar ">Universidade Cesumar </option>
+                        <option value="UCS - Canela">UCS - Canela</option>
+                        <option value="Colégio Frederico Michaelsen">Colégio Frederico Michaelsen</option>
+                        <option value="ISEI">Instituto Superior de Educação Ivoti</option>
+                        <option value="E. E. P. em Saúde do Hospital Pompéia">E. E. P. em Saúde do Hospital Pompéia</option>
+                        <option value="FTEC">FTEC</option>
+                        <option value="Uniasselvi">Uniasselvi</option>
+                        <option value="FTSG da Serra Gaúcha">FTSG da Serra Gaúcha</option>
+                        <option value="SENAC">SENAC</option>
+                        <option value="UNOPAR - Caxias do Sul">UNOPAR - Caxias do Sul</option>
+                        <option value="CETEC">CETEC</option>
+                        <option value="UERGS">UERGS</option>
+                        <option value="Dohms">Dohms</option>
+                        <option value="Nossa Sra. de Fátima">Nossa Sra. de Fátima</option>
+                        <option value="EETCS">Escola Estadual Técnica Caxias do Sul</option>
+                        <option value="ACM">Associação Cristã de Moços</option>
+                        <option value="UFCSPA">Univesidade Ferderal de Ciências da Saúde de Porto</option>
+                        <option value="UFRGS">Universidade Federal do Rio Grande do Sul</option>
+                        <option value="Anhanguera">Anhanguera</option>
+                        <option value="Ulbra - Canela">Ulbra - Canela</option>
+                        <option value="CHRONOS">Chronos</option>
+                        <option value="UNINTER">Uninter</option>
+                        <option value="Estácio">Faculdade Estácio</option>
+                        <option value="Ulbra">Ulbra</option>
+                        <option value="Outra">Outra universidade</option>
+                        <option value="Linha">Utilizo ônibus de linha</option>
+                        <option value="Nenhum">Não universitário, mas utilizo transporte</option>
+                    </select>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="curso2">Curso 2:</label>
+                    <select id="curso2" name="curso2">
+                        <option value="" selected></option>
+                        <option value="Adm. Gestão para Inovação e Liderança">Adm. Gestão para Inovação e Liderança</option>
+                        <option value="Administração de Empresas">Administração de Empresas</option>
+                        <option value="Administração de Empresas - Ênfase em Comércio Exterior">Administração de Empresas - Ênfase em Comércio Exterior</option>
+                        <option value="Agronegócios">Agronegócios</option>
+                        <option value="Agronomia">Agronomia</option>
+                        <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="Arquitetura e Urbanismo">Arquitetura e Urbanismo</option>
+                        <option value="Arte e Terapia">Arte e Terapia</option>
+                        <option value="Artes Plásticas">Artes Plásticas</option>
+                        <option value="Artes Visuais">Artes Visuais</option>
+                        <option value="Assistente Social">Assistente Social</option>
+                        <option value="Automação Industrial">Automação Industrial</option>
+                        <option value="Auxiliar de Saúde Bucal">Auxiliar de Saúde Bucal</option>
+                        <option value="Biologia">Biologia</option>
+                        <option value="Biomedicina">Biomedicina</option>
+                        <option value="Ciência da Computação">Ciência da Computação</option>
+                        <option value="Ciência e Tecnologia de Alimentos">Ciência e Tecnologia de Alimentos</option>
+                        <option value="Ciência Política">Ciência Política</option>
+                        <option value="Ciências Biológicas">Ciências Biológicas</option>
+                        <option value="Ciências Contábeis">Ciências Contábeis</option>
+                        <option value="Ciências Econômicas">Ciências Econômicas</option>
+                        <option value="Ciências Farmacêuticas">Ciências Farmacêuticas</option>
+                        <option value="Ciências Jurídicas">Ciências Jurídicas</option>
+                        <option value="Ciências Sociais">Ciências Sociais</option>
+                        <option value="Comércio Internacional">Comércio Internacional</option>
+                        <option value="Comissária de Voo">Comissária de Voo</option>
+                        <option value="Comunicação Digital">Comunicação Digital</option>
+                        <option value="Comunicação Social">Comunicação Social</option>
+                        <option value="Comunicação Social - Jornalismo">Comunicação Social - Jornalismo</option>
+                        <option value="Comunicação Social - Publicidade e Propaganda">Comunicação Social - Publicidade e Propaganda</option>
+                        <option value="Comunicação Social - Relações Públicas">Comunicação Social - Relações Públicas</option>
+                        <option value="Custos e Contabilidade">Custos e Contabilidade</option>
+                        <option value="Desenhista">Desenhista</option>
+                        <option value="Design">Design</option>
+                        <option value="Design de Interiores">Design de Interiores</option>
+                        <option value="Design de Moda">Design de Moda</option>
+                        <option value="Design de Moda e Tecnologia">Design de Moda e Tecnologia</option>
+                        <option value="Design de Móveis">Design de Móveis</option>
+                        <option value="Direito">Direito</option>
+                        <option value="Doutourado">Doutourado</option>
+                        <option value="Economia">Economia</option>
+                        <option value="Educação Física">Educação Física</option>
+                        <option value="Eletrica Automotiva">Eletrica Automotiva</option>
+                        <option value="Enfermagem">Enfermagem</option>
+                        <option value="Engenharia Ambiental">Engenharia Ambiental</option>
+                        <option value="Engenharia Ambiental com Habilitação em Mecânica">Engenharia Ambiental com Habilitação em Mecânica</option>
+                        <option value="Engenharia Biomédica">Engenharia Biomédica</option>
+                        <option value="Engenharia Cartográfica e de Agrimensura">Engenharia Cartográfica e de Agrimensura</option>
+                        <option value="Engenharia Civil">Engenharia Civil</option>
+                        <option value="Engenharia da Computação">Engenharia da Computação</option>
+                        <option value="Engenharia de Alimentos">Engenharia de Alimentos</option>
+                        <option value="Engenharia de Controle e Automoção">Engenharia de Controle e Automoção</option>
+                        <option value="Engenharia de Energia">Engenharia de Energia</option>
+                        <option value="Engenharia de Materiais">Engenharia de Materiais</option>
+                        <option value="Engenharia de Produção">Engenharia de Produção</option>
+                        <option value="Engenharia de Produção Mecânica">Engenharia de Produção Mecânica</option>
+                        <option value="Engenharia de Software ">Engenharia de Software </option>
+                        <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                        <option value="Engenharia Eletrônica">Engenharia Eletrônica</option>
+                        <option value="Engenharia Industrial Mecânica">Engenharia Industrial Mecânica</option>
+                        <option value="Engenharia Industrial Química">Engenharia Industrial Química</option>
+                        <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                        <option value="Engenharia Metalúrgica">Engenharia Metalúrgica</option>
+                        <option value="Engenharia Química">Engenharia Química</option>
+                        <option value="Ensino Fundamental - Escola Helen Keller">Ensino Fundamental - Escola Helen Keller</option>
+                        <option value="Ensino Médio">Ensino Médio</option>
+                        <option value="Ensino médio integrado com técnico">Ensino médio integrado com técnico</option>
+                        <option value="Farmácia">Farmácia</option>
+                        <option value="Filosofia">Filosofia</option>
+                        <option value="Física Médica">Física Médica</option>
+                        <option value="Fisioterapia">Fisioterapia</option>
+                        <option value="Fonoaodiologia">Fonoaodiologia</option>
+                        <option value="Formação de Produtores Musicais">Formação de Produtores Musicais</option>
+                        <option value="Formação em Diretor de Ensino CFC">Formação em Diretor de Ensino CFC</option>
+                        <option value="Fotografia">Fotografia</option>
+                        <option value="Gastronomia">Gastronomia</option>
+                        <option value="Geologia">Geologia</option>
+                        <option value="Gestão Ambiental">Gestão Ambiental</option>
+                        <option value="Gestão Comercial">Gestão Comercial</option>
+                        <option value="Gestão de Empresas">Gestão de Empresas</option>
+                        <option value="Gestão de Marketing">Gestão de Marketing</option>
+                        <option value="Gestão de Marketing Empresarial">Gestão de Marketing Empresarial</option>
+                        <option value="Gestão de Micro e Pequenas Empresas">Gestão de Micro e Pequenas Empresas</option>
+                        <option value="Gestão de Pessoas">Gestão de Pessoas</option>
+                        <option value="Gestão de Produção">Gestão de Produção</option>
+                        <option value="Gestão de Segurança Privada">Gestão de Segurança Privada</option>
+                        <option value="Gestão de Vendas e Representações Comercias">Gestão de Vendas e Representações Comercias</option>
+                        <option value="Gestão e Inovação em Liderança">Gestão e Inovação em Liderança</option>
+                        <option value="Gestão em RH">Gestão em RH</option>
+                        <option value="Gestão Financeira">Gestão Financeira</option>
+                        <option value="Gestão Pública">Gestão Pública</option>
+                        <option value="Graduação">Graduação</option>
+                        <option value="História">História</option>
+                        <option value="Hotelaria">Hotelaria</option>
+                        <option value="Inglês">Inglês</option>
+                        <option value="Jogador de vôlei">Jogador de vôlei</option>
+                        <option value="Jornalismo">Jornalismo</option>
+                        <option value="Letras">Letras</option>
+                        <option value="Letras - Português/Alemão">Letras - Português/Alemão</option>
+                        <option value="Letras - Português/Espanhol">Letras - Português/Espanhol</option>
+                        <option value="Letras - Português/Inglês">Letras - Português/Inglês</option>
+                        <option value="Libras">Libras</option>
+                        <option value="Logistica">Logistica</option>
+                        <option value="Magistério">Magistério</option>
+                        <option value="Marketing e suas Tecnologias">Marketing e suas Tecnologias</option>
+                        <option value="Marketing Empresarial">Marketing Empresarial</option>
+                        <option value="Matemática">Matemática</option>
+                        <option value="Medicina">Medicina</option>
+                        <option value="Medicina Veterinária">Medicina Veterinária</option>
+                        <option value="Mestrado">Mestrado</option>
+                        <option value="Moda">Moda</option>
+                        <option value="Moda e Estilo">Moda e Estilo</option>
+                        <option value="Música">Música</option>
+                        <option value="Negócios Imobiliários">Negócios Imobiliários</option>
+                        <option value="Nutrição">Nutrição</option>
+                        <option value="Odontologia">Odontologia</option>
+                        <option value="Organizador de Eventos">Organizador de Eventos</option>
+                        <option value="Outros">Outros</option>
+                        <option value="Pedagogia">Pedagogia</option>
+                        <option value="Polímeros">Polímeros</option>
+                        <option value="Pós-Graduação">Pós-Graduação</option>
+                        <option value="Pré-Vestibular">Pré-Vestibular</option>
+                        <option value="Processos Gerenciais">Processos Gerenciais</option>
+                        <option value="Processos Químicos">Processos Químicos</option>
+                        <option value="Professor(a)">Professor(a)</option>
+                        <option value="Psicologia">Psicologia</option>
+                        <option value="Psicopedagogia">Psicopedagogia</option>
+                        <option value="Publicidade e Propaganda">Publicidade e Propaganda</option>
+                        <option value="Química">Química</option>
+                        <option value="Quiropraxia">Quiropraxia</option>
+                        <option value="Radiologia">Radiologia</option>
+                        <option value="Relações Internacionais">Relações Internacionais</option>
+                        <option value="Relações Públicas">Relações Públicas</option>
+                        <option value="Secretariado Executivo Bilíngue">Secretariado Executivo Bilíngue</option>
+                        <option value="Segurança do Trabalho">Segurança do Trabalho</option>
+                        <option value="Serviço Social">Serviço Social</option>
+                        <option value="Sistemas de Informação">Sistemas de Informação</option>
+                        <option value="Sistemas de Qualidade">Sistemas de Qualidade</option>
+                        <option value="Sistemas para Internet">Sistemas para Internet</option>
+                        <option value="Técnico Calçado Industrial">Técnico Calçado Industrial</option>
+                        <option value="Técnico em Administração">Técnico em Administração</option>
+                        <option value="Técnico em Cozinha">Técnico em Cozinha</option>
+                        <option value="Técnico em Edificações">Técnico em Edificações</option>
+                        <option value="Técnico em Eletrônica">Técnico em Eletrônica</option>
+                        <option value="Técnico em Enfermagem">Técnico em Enfermagem</option>
+                        <option value="Técnico em Gastronomia">Técnico em Gastronomia</option>
+                        <option value="Técnico em Gestão">Técnico em Gestão</option>
+                        <option value="Técnico em Guia de Turismo">Técnico em Guia de Turismo</option>
+                        <option value="Técnico em Informática">Técnico em Informática</option>
+                        <option value="Técnico em Instrumentação Industrial">Técnico em Instrumentação Industrial</option>
+                        <option value="Técnico em Logística">Técnico em Logística</option>
+                        <option value="Técnico em Magistério">Técnico em Magistério</option>
+                        <option value="Técnico em Manutenção Automotiva">Técnico em Manutenção Automotiva</option>
+                        <option value="Técnico em Matalurgia">Técnico em Matalurgia</option>
+                        <option value="Técnico em Mecânica">Técnico em Mecânica</option>
+                        <option value="Técnico em Mecatrônica">Técnico em Mecatrônica</option>
+                        <option value="Técnico em Meio Ambiente">Técnico em Meio Ambiente</option>
+                        <option value="Técnico em Modelagem Feminina">Técnico em Modelagem Feminina</option>
+                        <option value="Técnico em Organização de Eventos">Técnico em Organização de Eventos</option>
+                        <option value="Técnico em Piloto Automático">Técnico em Piloto Automático</option>
+                        <option value="Técnico em Prótese Odontológica">Técnico em Prótese Odontológica</option>
+                        <option value="Técnico em Química">Técnico em Química</option>
+                        <option value="Técnico em Radiologia">Técnico em Radiologia</option>
+                        <option value="Técnico em Saúde Bucal">Técnico em Saúde Bucal</option>
+                        <option value="Técnico em Transações Imobiliárias">Técnico em Transações Imobiliárias</option>
+                        <option value="Técnico em Turismo">Técnico em Turismo</option>
+                        <option value="Técnico Gerência Empresarial">Técnico Gerência Empresarial</option>
+                        <option value="Técnico Magistério">Técnico Magistério</option>
+                        <option value="Técnico Segurança do Trabalho">Técnico Segurança do Trabalho</option>
+                        <option value="Tecnologia em Análise e Desenvolvimento de Sistemas">Tecnologia em Análise e Desenvolvimento de Sistemas</option>
+                        <option value="Tecnologia em Comércio Exterior">Tecnologia em Comércio Exterior</option>
+                        <option value="Tecnologia em Design de Interiores">Tecnologia em Design de Interiores</option>
+                        <option value="Tecnologia em Design Gráfico">Tecnologia em Design Gráfico</option>
+                        <option value="Tecnologia em Estética ">Tecnologia em Estética </option>
+                        <option value="Tecnologia em Estética e Cosmética">Tecnologia em Estética e Cosmética</option>
+                        <option value="Tecnologia em Eventos">Tecnologia em Eventos</option>
+                        <option value="Tecnologia em Gestão Ambiental">Tecnologia em Gestão Ambiental</option>
+                        <option value="Tecnologia em Gestão da Produção Industrial">Tecnologia em Gestão da Produção Industrial</option>
+                        <option value="Tecnologia em Gestão de Recursos Humanos">Tecnologia em Gestão de Recursos Humanos</option>
+                        <option value="Tecnologia em Jogos Digitais">Tecnologia em Jogos Digitais</option>
+                        <option value="Tecnologia em Logística">Tecnologia em Logística</option>
+                        <option value="Tecnologia em Produção Fonográfica">Tecnologia em Produção Fonográfica</option>
+                        <option value="Tecnologia em Produção Multimídia">Tecnologia em Produção Multimídia</option>
+                        <option value="Tecnologia em Redes de Computadores">Tecnologia em Redes de Computadores</option>
+                        <option value="Tecnologia em Segurança da Informação">Tecnologia em Segurança da Informação</option>
+                        <option value="Tecnologia em Segurança do Trabalho">Tecnologia em Segurança do Trabalho</option>
+                        <option value="Tecnologia em Segurança Privada">Tecnologia em Segurança Privada</option>
+                        <option value="Tecnologia em Sistemas para Internet">Tecnologia em Sistemas para Internet</option>
+                        <option value="Tecnologias Digitais">Tecnologias Digitais</option>
+                        <option value="Turismo">Turismo</option>
+                    </select>
+                </div>
+                
+                 <div class="leftlabel">   
+                     <label for="id2">Nº cadastro aluno/Id aluno/Nº matrícula 2:	</label>
+                     <input type="input" name="id2" id="id2" title="id2" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="facul3">Faculdade 3:</label>
+                    <select id="facul3" name="facul3">
+                        <option value="" selected></option>
+                        <option value="UCS - Caxias do Sul">UCS - Caxias do Sul</option>
+                        <option value="FSG">FSG-Faculdade da Serra Gaúcha</option>
+                        <option value="Unisinos">Unisinos</option>
+                        <option value="Feevale">Feevale</option>
+                        <option value="Liberato">Liberato</option>
+                        <option value="IFRS">Instituto Federal da Feliz</option>
+                        <option value="SENAI">SENAI-Serviço Nacional de Aprendizagem Industrial</option>
+                        <option value="SEG">SEG-São Francisco Cursos Técnicos</option>
+                        <option value="UNOPAR">UNOPAR</option>
+                        <option value="Ideau">IDEAU - Caxias do Sul</option>
+                        <option value="IFRS Caxias">Instituto Federal de Caxias do Sul</option>
+                        <option value="GRAU">GRAU Técnico Caxias do Sul</option>
+                        <option value="FIERGS">FIERGS - SENAI</option>
+                        <option value="Pré-vestibular">Pré-vestibular</option>
+                        <option value="Unicesumar ">Universidade Cesumar </option>
+                        <option value="UCS - Canela">UCS - Canela</option>
+                        <option value="Colégio Frederico Michaelsen">Colégio Frederico Michaelsen</option>
+                        <option value="ISEI">Instituto Superior de Educação Ivoti</option>
+                        <option value="E. E. P. em Saúde do Hospital Pompéia">E. E. P. em Saúde do Hospital Pompéia</option>
+                        <option value="FTEC">FTEC</option>
+                        <option value="Uniasselvi">Uniasselvi</option>
+                        <option value="FTSG da Serra Gaúcha">FTSG da Serra Gaúcha</option>
+                        <option value="SENAC">SENAC</option>
+                        <option value="UNOPAR - Caxias do Sul">UNOPAR - Caxias do Sul</option>
+                        <option value="CETEC">CETEC</option>
+                        <option value="UERGS">UERGS</option>
+                        <option value="Dohms">Dohms</option>
+                        <option value="Nossa Sra. de Fátima">Nossa Sra. de Fátima</option>
+                        <option value="EETCS">Escola Estadual Técnica Caxias do Sul</option>
+                        <option value="ACM">Associação Cristã de Moços</option>
+                        <option value="UFCSPA">Univesidade Ferderal de Ciências da Saúde de Porto</option>
+                        <option value="UFRGS">Universidade Federal do Rio Grande do Sul</option>
+                        <option value="Anhanguera">Anhanguera</option>
+                        <option value="Ulbra - Canela">Ulbra - Canela</option>
+                        <option value="CHRONOS">Chronos</option>
+                        <option value="UNINTER">Uninter</option>
+                        <option value="Estácio">Faculdade Estácio</option>
+                        <option value="Ulbra">Ulbra</option>
+                        <option value="Outra">Outra universidade</option>
+                        <option value="Linha">Utilizo ônibus de linha</option>
+                        <option value="Nenhum">Não universitário, mas utilizo transporte</option>
+                    </select>
+                </div>
+
+                <div class="leftlabel">
+                <label for="curso3">Curso 3:</label>
+                <select id="curso3" name="curso3" >
+                    <option value="" selected></option>
+                    <option value="Adm. Gestão para Inovação e Liderança">Adm. Gestão para Inovação e Liderança</option>
+                    <option value="Administração de Empresas">Administração de Empresas</option>
+                    <option value="Administração de Empresas - Ênfase em Comércio Exterior">Administração de Empresas - Ênfase em Comércio Exterior</option>
+                    <option value="Agronegócios">Agronegócios</option>
+                    <option value="Agronomia">Agronomia</option>
+                    <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                    <option value="Arquitetura e Urbanismo">Arquitetura e Urbanismo</option>
+                    <option value="Arte e Terapia">Arte e Terapia</option>
+                    <option value="Artes Plásticas">Artes Plásticas</option>
+                    <option value="Artes Visuais">Artes Visuais</option>
+                    <option value="Assistente Social">Assistente Social</option>
+                    <option value="Automação Industrial">Automação Industrial</option>
+                    <option value="Auxiliar de Saúde Bucal">Auxiliar de Saúde Bucal</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Biomedicina">Biomedicina</option>
+                    <option value="Ciência da Computação">Ciência da Computação</option>
+                    <option value="Ciência e Tecnologia de Alimentos">Ciência e Tecnologia de Alimentos</option>
+                    <option value="Ciência Política">Ciência Política</option>
+                    <option value="Ciências Biológicas">Ciências Biológicas</option>
+                    <option value="Ciências Contábeis">Ciências Contábeis</option>
+                    <option value="Ciências Econômicas">Ciências Econômicas</option>
+                    <option value="Ciências Farmacêuticas">Ciências Farmacêuticas</option>
+                    <option value="Ciências Jurídicas">Ciências Jurídicas</option>
+                    <option value="Ciências Sociais">Ciências Sociais</option>
+                    <option value="Comércio Internacional">Comércio Internacional</option>
+                    <option value="Comissária de Voo">Comissária de Voo</option>
+                    <option value="Comunicação Digital">Comunicação Digital</option>
+                    <option value="Comunicação Social">Comunicação Social</option>
+                    <option value="Comunicação Social - Jornalismo">Comunicação Social - Jornalismo</option>
+                    <option value="Comunicação Social - Publicidade e Propaganda">Comunicação Social - Publicidade e Propaganda</option>
+                    <option value="Comunicação Social - Relações Públicas">Comunicação Social - Relações Públicas</option>
+                    <option value="Custos e Contabilidade">Custos e Contabilidade</option>
+                    <option value="Desenhista">Desenhista</option>
+                    <option value="Design">Design</option>
+                    <option value="Design de Interiores">Design de Interiores</option>
+                    <option value="Design de Moda">Design de Moda</option>
+                    <option value="Design de Moda e Tecnologia">Design de Moda e Tecnologia</option>
+                    <option value="Design de Móveis">Design de Móveis</option>
+                    <option value="Direito">Direito</option>
+                    <option value="Doutourado">Doutourado</option>
+                    <option value="Economia">Economia</option>
+                    <option value="Educação Física">Educação Física</option>
+                    <option value="Eletrica Automotiva">Eletrica Automotiva</option>
+                    <option value="Enfermagem">Enfermagem</option>
+                    <option value="Engenharia Ambiental">Engenharia Ambiental</option>
+                    <option value="Engenharia Ambiental com Habilitação em Mecânica">Engenharia Ambiental com Habilitação em Mecânica</option>
+                    <option value="Engenharia Biomédica">Engenharia Biomédica</option>
+                    <option value="Engenharia Cartográfica e de Agrimensura">Engenharia Cartográfica e de Agrimensura</option>
+                    <option value="Engenharia Civil">Engenharia Civil</option>
+                    <option value="Engenharia da Computação">Engenharia da Computação</option>
+                    <option value="Engenharia de Alimentos">Engenharia de Alimentos</option>
+                    <option value="Engenharia de Controle e Automoção">Engenharia de Controle e Automoção</option>
+                    <option value="Engenharia de Energia">Engenharia de Energia</option>
+                    <option value="Engenharia de Materiais">Engenharia de Materiais</option>
+                    <option value="Engenharia de Produção">Engenharia de Produção</option>
+                    <option value="Engenharia de Produção Mecânica">Engenharia de Produção Mecânica</option>
+                    <option value="Engenharia de Software ">Engenharia de Software </option>
+                    <option value="Engenharia Elétrica">Engenharia Elétrica</option>
+                    <option value="Engenharia Eletrônica">Engenharia Eletrônica</option>
+                    <option value="Engenharia Industrial Mecânica">Engenharia Industrial Mecânica</option>
+                    <option value="Engenharia Industrial Química">Engenharia Industrial Química</option>
+                    <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                    <option value="Engenharia Metalúrgica">Engenharia Metalúrgica</option>
+                    <option value="Engenharia Química">Engenharia Química</option>
+                    <option value="Ensino Fundamental - Escola Helen Keller">Ensino Fundamental - Escola Helen Keller</option>
+                    <option value="Ensino Médio">Ensino Médio</option>
+                    <option value="Ensino médio integrado com técnico">Ensino médio integrado com técnico</option>
+                    <option value="Farmácia">Farmácia</option>
+                    <option value="Filosofia">Filosofia</option>
+                    <option value="Física Médica">Física Médica</option>
+                    <option value="Fisioterapia">Fisioterapia</option>
+                    <option value="Fonoaodiologia">Fonoaodiologia</option>
+                    <option value="Formação de Produtores Musicais">Formação de Produtores Musicais</option>
+                    <option value="Formação em Diretor de Ensino CFC">Formação em Diretor de Ensino CFC</option>
+                    <option value="Fotografia">Fotografia</option>
+                    <option value="Gastronomia">Gastronomia</option>
+                    <option value="Geologia">Geologia</option>
+                    <option value="Gestão Ambiental">Gestão Ambiental</option>
+                    <option value="Gestão Comercial">Gestão Comercial</option>
+                    <option value="Gestão de Empresas">Gestão de Empresas</option>
+                    <option value="Gestão de Marketing">Gestão de Marketing</option>
+                    <option value="Gestão de Marketing Empresarial">Gestão de Marketing Empresarial</option>
+                    <option value="Gestão de Micro e Pequenas Empresas">Gestão de Micro e Pequenas Empresas</option>
+                    <option value="Gestão de Pessoas">Gestão de Pessoas</option>
+                    <option value="Gestão de Produção">Gestão de Produção</option>
+                    <option value="Gestão de Segurança Privada">Gestão de Segurança Privada</option>
+                    <option value="Gestão de Vendas e Representações Comercias">Gestão de Vendas e Representações Comercias</option>
+                    <option value="Gestão e Inovação em Liderança">Gestão e Inovação em Liderança</option>
+                    <option value="Gestão em RH">Gestão em RH</option>
+                    <option value="Gestão Financeira">Gestão Financeira</option>
+                    <option value="Gestão Pública">Gestão Pública</option>
+                    <option value="Graduação">Graduação</option>
+                    <option value="História">História</option>
+                    <option value="Hotelaria">Hotelaria</option>
+                    <option value="Inglês">Inglês</option>
+                    <option value="Jogador de vôlei">Jogador de vôlei</option>
+                    <option value="Jornalismo">Jornalismo</option>
+                    <option value="Letras">Letras</option>
+                    <option value="Letras - Português/Alemão">Letras - Português/Alemão</option>
+                    <option value="Letras - Português/Espanhol">Letras - Português/Espanhol</option>
+                    <option value="Letras - Português/Inglês">Letras - Português/Inglês</option>
+                    <option value="Libras">Libras</option>
+                    <option value="Logistica">Logistica</option>
+                    <option value="Magistério">Magistério</option>
+                    <option value="Marketing e suas Tecnologias">Marketing e suas Tecnologias</option>
+                    <option value="Marketing Empresarial">Marketing Empresarial</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Medicina">Medicina</option>
+                    <option value="Medicina Veterinária">Medicina Veterinária</option>
+                    <option value="Mestrado">Mestrado</option>
+                    <option value="Moda">Moda</option>
+                    <option value="Moda e Estilo">Moda e Estilo</option>
+                    <option value="Música">Música</option>
+                    <option value="Negócios Imobiliários">Negócios Imobiliários</option>
+                    <option value="Nutrição">Nutrição</option>
+                    <option value="Odontologia">Odontologia</option>
+                    <option value="Organizador de Eventos">Organizador de Eventos</option>
+                    <option value="Outros">Outros</option>
+                    <option value="Pedagogia">Pedagogia</option>
+                    <option value="Polímeros">Polímeros</option>
+                    <option value="Pós-Graduação">Pós-Graduação</option>
+                    <option value="Pré-Vestibular">Pré-Vestibular</option>
+                    <option value="Processos Gerenciais">Processos Gerenciais</option>
+                    <option value="Processos Químicos">Processos Químicos</option>
+                    <option value="Professor(a)">Professor(a)</option>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Psicopedagogia">Psicopedagogia</option>
+                    <option value="Publicidade e Propaganda">Publicidade e Propaganda</option>
+                    <option value="Química">Química</option>
+                    <option value="Quiropraxia">Quiropraxia</option>
+                    <option value="Radiologia">Radiologia</option>
+                    <option value="Relações Internacionais">Relações Internacionais</option>
+                    <option value="Relações Públicas">Relações Públicas</option>
+                    <option value="Secretariado Executivo Bilíngue">Secretariado Executivo Bilíngue</option>
+                    <option value="Segurança do Trabalho">Segurança do Trabalho</option>
+                    <option value="Serviço Social">Serviço Social</option>
+                    <option value="Sistemas de Informação">Sistemas de Informação</option>
+                    <option value="Sistemas de Qualidade">Sistemas de Qualidade</option>
+                    <option value="Sistemas para Internet">Sistemas para Internet</option>
+                    <option value="Técnico Calçado Industrial">Técnico Calçado Industrial</option>
+                    <option value="Técnico em Administração">Técnico em Administração</option>
+                    <option value="Técnico em Cozinha">Técnico em Cozinha</option>
+                    <option value="Técnico em Edificações">Técnico em Edificações</option>
+                    <option value="Técnico em Eletrônica">Técnico em Eletrônica</option>
+                    <option value="Técnico em Enfermagem">Técnico em Enfermagem</option>
+                    <option value="Técnico em Gastronomia">Técnico em Gastronomia</option>
+                    <option value="Técnico em Gestão">Técnico em Gestão</option>
+                    <option value="Técnico em Guia de Turismo">Técnico em Guia de Turismo</option>
+                    <option value="Técnico em Informática">Técnico em Informática</option>
+                    <option value="Técnico em Instrumentação Industrial">Técnico em Instrumentação Industrial</option>
+                    <option value="Técnico em Logística">Técnico em Logística</option>
+                    <option value="Técnico em Magistério">Técnico em Magistério</option>
+                    <option value="Técnico em Manutenção Automotiva">Técnico em Manutenção Automotiva</option>
+                    <option value="Técnico em Matalurgia">Técnico em Matalurgia</option>
+                    <option value="Técnico em Mecânica">Técnico em Mecânica</option>
+                    <option value="Técnico em Mecatrônica">Técnico em Mecatrônica</option>
+                    <option value="Técnico em Meio Ambiente">Técnico em Meio Ambiente</option>
+                    <option value="Técnico em Modelagem Feminina">Técnico em Modelagem Feminina</option>
+                    <option value="Técnico em Organização de Eventos">Técnico em Organização de Eventos</option>
+                    <option value="Técnico em Piloto Automático">Técnico em Piloto Automático</option>
+                    <option value="Técnico em Prótese Odontológica">Técnico em Prótese Odontológica</option>
+                    <option value="Técnico em Química">Técnico em Química</option>
+                    <option value="Técnico em Radiologia">Técnico em Radiologia</option>
+                    <option value="Técnico em Saúde Bucal">Técnico em Saúde Bucal</option>
+                    <option value="Técnico em Transações Imobiliárias">Técnico em Transações Imobiliárias</option>
+                    <option value="Técnico em Turismo">Técnico em Turismo</option>
+                    <option value="Técnico Gerência Empresarial">Técnico Gerência Empresarial</option>
+                    <option value="Técnico Magistério">Técnico Magistério</option>
+                    <option value="Técnico Segurança do Trabalho">Técnico Segurança do Trabalho</option>
+                    <option value="Tecnologia em Análise e Desenvolvimento de Sistemas">Tecnologia em Análise e Desenvolvimento de Sistemas</option>
+                    <option value="Tecnologia em Comércio Exterior">Tecnologia em Comércio Exterior</option>
+                    <option value="Tecnologia em Design de Interiores">Tecnologia em Design de Interiores</option>
+                    <option value="Tecnologia em Design Gráfico">Tecnologia em Design Gráfico</option>
+                    <option value="Tecnologia em Estética ">Tecnologia em Estética </option>
+                    <option value="Tecnologia em Estética e Cosmética">Tecnologia em Estética e Cosmética</option>
+                    <option value="Tecnologia em Eventos">Tecnologia em Eventos</option>
+                    <option value="Tecnologia em Gestão Ambiental">Tecnologia em Gestão Ambiental</option>
+                    <option value="Tecnologia em Gestão da Produção Industrial">Tecnologia em Gestão da Produção Industrial</option>
+                    <option value="Tecnologia em Gestão de Recursos Humanos">Tecnologia em Gestão de Recursos Humanos</option>
+                    <option value="Tecnologia em Jogos Digitais">Tecnologia em Jogos Digitais</option>
+                    <option value="Tecnologia em Logística">Tecnologia em Logística</option>
+                    <option value="Tecnologia em Produção Fonográfica">Tecnologia em Produção Fonográfica</option>
+                    <option value="Tecnologia em Produção Multimídia">Tecnologia em Produção Multimídia</option>
+                    <option value="Tecnologia em Redes de Computadores">Tecnologia em Redes de Computadores</option>
+                    <option value="Tecnologia em Segurança da Informação">Tecnologia em Segurança da Informação</option>
+                    <option value="Tecnologia em Segurança do Trabalho">Tecnologia em Segurança do Trabalho</option>
+                    <option value="Tecnologia em Segurança Privada">Tecnologia em Segurança Privada</option>
+                    <option value="Tecnologia em Sistemas para Internet">Tecnologia em Sistemas para Internet</option>
+                    <option value="Tecnologias Digitais">Tecnologias Digitais</option>
+                    <option value="Turismo">Turismo</option>
+                </select>
+                </div>
+                
+                <div class="leftlabel">    
+                    <label class="optional" for="id3">Nº cadastro aluno/Id aluno/Nº matrícula 3:	</label>
+                    <input type="input" name="id3" id="id3" title="id3">
+                </div>
+                
+                <div class="leftlabel">    
+                    <label for="senha">Senha:</label>
+                    <input type="input" name="senha" id="senha" title="senha" required>
+                </div>
+
+                <div class="leftlabel">
+                    <label for="repetir">Repetir senha:</label>
+                    <input type="input" name="repetir" id="repetir" title="repetir" required>
+                </div>
+
+                <div class="send">
+
+                    <input type="submit" value="Cadastrar">
+                </div>
+
+
+
+            </form>
+        </div>
+                        
+    </main>
+    <footer>
+        <p>©2026 Helaman Brollo</p>
+    </footer>
+</body>
+</html>

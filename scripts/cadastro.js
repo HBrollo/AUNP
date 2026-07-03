@@ -7,13 +7,13 @@ hamButton.addEventListener('click', () =>
 	    hamButton.classList.toggle('show');
     })
 
-//Botões de Visibilidade
 const darkBtn = document.getElementById("darkBtn");
 const contrastBtn = document.getElementById("contrastBtn");
 
 darkBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 
+    // Don't allow both modes simultaneously
     document.body.classList.remove("high-contrast");
 });
 

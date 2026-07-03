@@ -7,8 +7,7 @@
     --border: #202020;
     --nav-bg: black;
     --nav-text: white;
-}
-    
+    }
     .background
     {
         display: block;
@@ -62,6 +61,22 @@
     {
         color: white;
         background-color: #202020;
+    }
+    /*FORM*/
+    .leftlabel input, .leftlabel select
+    {
+        min-height: 30px;
+    }
+    .short
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /*FOOTER*/
+    footer
+    {
+        margin-top: -5em
     }
     /*Dark mode*/
     body.dark-mode {
